@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mark Six Result</title>
+  </head>
+
+  <body>
+    <h1>Mark Six Result</h1>
+
+    <script>
+      // Step 1: Create an array with 6 slots
+      var mark_six = new Array(6);
+
+      // Step 2: Use a for loop to fill with random numbers from 1–49
+      for (var i = 0; i < mark_six.length; i++) {
+        mark_six[i] = Math.floor(Math.random() * 49) + 1;
+      }
+
+      // Step 3: Display the results in a table
+      document.write("<table border='1' cellspacing='0' cellpadding='8'>");
+      document.write("<tr><th>Subscription</th><th>Value</th></tr>");
+
+      for (var i = 0; i < mark_six.length; i++) {
+        document.write(
+          "<tr><td>" + i + "</td><td>" + mark_six[i] + "</td></tr>",
+        );
+      }
+
+      document.write("</table>");
+    </script>
+  </body>
+</html>

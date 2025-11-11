@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script>
+      var input, n, answer;
+      input = window.prompt("Enter n:", "0");
+      n = parseInt(input);
+
+      answer = 1; // final product of all factorials
+
+      for (var i = 1; i <= n; i++) {
+        var factorial = 1; // reset inner factorial
+        var line = ""; // to print triangle pattern
+
+        for (var j = 1; j <= i; j++) {
+          factorial *= j;
+          line += j + "*"; // build text pattern
+        }
+
+        document.write(line + "<br>");
+
+        answer *= factorial;
+      }
+
+      // Show final answer
+      alert("part (e) " + answer);
+    </script>
+  </head>
+
+  <body></body>
+</html>

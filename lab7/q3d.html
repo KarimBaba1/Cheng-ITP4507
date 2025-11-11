@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script>
+      var input, n, d, answer;
+      input = window.prompt("Enter n:", "0"); // last term
+      n = parseInt(input);
+      input = window.prompt("Enter d:", "0"); // step
+      d = parseInt(input);
+
+      answer = 1;
+      for (var i = 1; i <= n; i++) {
+        answer *= i;
+      }
+      alert("part (d) " + answer);
+
+      alert("part (x) " + answer);
+    </script>
+  </head>
+
+  <body></body>
+</html>

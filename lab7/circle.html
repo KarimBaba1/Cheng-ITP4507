@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Circle and Sphere Calculator</title>
+</head>
+
+<body>
+  <h1>Calculation Result</h1>
+
+  <script>
+    // Define constant Pi
+    var Pi = Math.PI;
+
+    // Ask user for radius
+    var radius = parseFloat(prompt("Enter radius:"));
+
+    // Perform calculations
+    var circleArea = Pi * Math.pow(radius, 2);
+    var sphereArea = 4 * Pi * Math.pow(radius, 2);
+    var sphereVolume = (4 / 3) * Pi * Math.pow(radius, 3);
+
+    // Show results in a table
+    document.write("<table border='1' cellspacing='0' cellpadding='8'>");
+    document.write(
+      "<tr><td>Circle Area = " + circleArea.toFixed(1) + "</td></tr>",
+    );
+    document.write(
+      "<tr><td>Sphere Area = " + sphereArea.toFixed(1) + "</td></tr>",
+    );
+    document.write("<tr><td>Sphere Volume = " + sphereVolume + "</td></tr>");
+    document.write("</table>");
+
+    document.write("<br>Click Refresh (or Reload) to run the script again");
+  </script>
+</body>
+
+</html>
