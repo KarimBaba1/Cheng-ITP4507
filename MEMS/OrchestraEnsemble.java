@@ -1,4 +1,3 @@
-
 public class OrchestraEnsemble extends Ensemble {
 
     public static final int VIOLINIST_ROLE = 1;
@@ -10,6 +9,7 @@ public class OrchestraEnsemble extends Ensemble {
 
     @Override
     public void updateMusicianRole() {
+        // unchanged; not used by current command-based UI
         System.out.print("Please input musician ID:- ");
         String id = SCANNER.nextLine().trim();
 
@@ -40,20 +40,26 @@ public class OrchestraEnsemble extends Ensemble {
 
     @Override
     public void showEnsemble() {
+        String line = "============================================================";
+        System.out.println(line);
         System.out.println("Orchestra Ensemble " + getName() + " (" + getEnsembleID() + ")");
+        System.out.println(line);
         System.out.println("Violinist:");
         for (java.util.Iterator<Musician> it = getMusicians(); it.hasNext(); ) {
             Musician m = it.next();
             if (m.getRole() == VIOLINIST_ROLE) {
-                System.out.println(m.getMID() + ", " + m.getName());
+                System.out.println("  " + m.getMID() + ", " + m.getName());
             }
         }
+        System.out.println();
         System.out.println("Cellist:");
         for (java.util.Iterator<Musician> it = getMusicians(); it.hasNext(); ) {
             Musician m = it.next();
             if (m.getRole() == CELLIST_ROLE) {
-                System.out.println(m.getMID() + ", " + m.getName());
+                System.out.println("  " + m.getMID() + ", " + m.getName());
             }
         }
+        System.out.println(line);
     }
 }
+
