@@ -1,0 +1,26 @@
+
+c
+o
+E001
+SYO
+a
+m001, First Player
+1
+a
+m002, Second Player
+2
+cn
+NEWNAME
+a
+m003, Third Player
+1
+l
+u
+u
+se
+l
+r
+r
+se
+l
+x

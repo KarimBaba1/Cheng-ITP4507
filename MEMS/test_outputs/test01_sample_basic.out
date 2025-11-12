@@ -1,0 +1,567 @@
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: (none)                                   |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Enter music type (o = orchestra | j = jazz band) :- Ensemble ID:- Ensemble Name:- Orchestra ensemble is created.
+Current ensemble is changed to E001.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician information (id, name):- Instrument (1 = violinist | 2 = cellist ):-  Musician is added.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician information (id, name):- Instrument (1 = violinist | 2 = cellist ):-  Musician is added.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+Orchestra Ensemble SYO (E001)
+============================================================
+Violinist:
+  m001, Chole Chua
+
+Cellist:
+  m002, Mischa Maisky
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Enter music type (o = orchestra | j = jazz band) :- Ensemble ID:- Ensemble Name:- Jazz band ensemble is created.
+Current ensemble is changed to E102.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E102 BLUE NOTE                           |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+All Ensembles
+============================================================
+Orchestra Ensemble SYO (E001)
+Jazz Band Ensemble BLUE NOTE (E102)
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E102 BLUE NOTE                           |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician information (id, name):- Instrument (1 = pianist | 2 = saxophonist  | 3 = drummer):-  Musician is added.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E102 BLUE NOTE                           |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician information (id, name):- Instrument (1 = pianist | 2 = saxophonist  | 3 = drummer):-  Musician is added.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E102 BLUE NOTE                           |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician information (id, name):- Instrument (1 = pianist | 2 = saxophonist  | 3 = drummer):-  Musician is added.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E102 BLUE NOTE                           |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+Jazz Band Ensemble BLUE NOTE (E102)
+============================================================
+Pianist:
+  m101, Herbie Hancock
+
+Saxophonist:
+  m102, John Coltrane
+
+Drummer:
+  m103, Buddy Rich
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E102 BLUE NOTE                           |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input ensemble ID:- Changed current ensemble to E001.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+All Ensembles
+============================================================
+Orchestra Ensemble SYO (E001)
+Jazz Band Ensemble BLUE NOTE (E102)
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician information (id, name):- Instrument (1 = violinist | 2 = cellist ):-  Musician is added.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+Orchestra Ensemble SYO (E001)
+============================================================
+Violinist:
+  m001, Chole Chua
+  m003, Joshua Bell
+
+Cellist:
+  m002, Mischa Maisky
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician ID:- Instrument (1 = violinist | 2 = cellist ):-  Instrument is updated.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+Orchestra Ensemble SYO (E001)
+============================================================
+Violinist:
+  m003, Joshua Bell
+
+Cellist:
+  m001, Chole Chua
+  m002, Mischa Maisky
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input musician ID:- Musician is deleted.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+Orchestra Ensemble SYO (E001)
+============================================================
+Violinist:
+  m003, Joshua Bell
+
+Cellist:
+  m002, Mischa Maisky
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 SYO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- Please input new name of the current ensemble:- Ensemble's name is updated.
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 HSO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+Orchestra Ensemble HSO (E001)
+============================================================
+Violinist:
+  m003, Joshua Bell
+
+Cellist:
+  m002, Mischa Maisky
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 HSO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ============================================================
+Undo List
+============================================================
+Create ensemble, E001, SYO
+Add musician, m001, Chole Chua
+Add musician, m002, Mischa Maisky
+Create ensemble, E102, BLUE NOTE
+Add musician, m101, Herbie Hancock
+Add musician, m102, John Coltrane
+Add musician, m103, Buddy Rich
+Add musician, m003, Joshua Bell
+Modify musician's instrument, m001
+Delete musician, m001
+Change ensemble's name to HSO
+-- End of undo list --
+
+============================================================
+Redo List
+============================================================
+(empty)
+-- End of redo list --
+============================================================
+
++----------------------------------------------------------+
+
++----------------------------------------------------------+
+| Music Ensembles Management System (MEMS)                   |
++----------------------------------------------------------+
+| c  = create ensemble                                       |
+| s  = set current ensemble                                  |
+| a  = add musician                                          |
+| m  = modify musician's instrument                          |
+| d  = delete musician                                       |
+| se = show current ensemble                                 |
+| sa = display all ensembles                                 |
+| cn = change ensemble's name                                |
+| u  = undo                                                  |
+| r  = redo                                                  |
+| l  = list undo/redo                                        |
+| x  = exit system                                           |
++----------------------------------------------------------+
+| Current ensemble: E001 HSO                                 |
++----------------------------------------------------------+
+Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- System exited.
