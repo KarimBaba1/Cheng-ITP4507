@@ -1,3 +1,11 @@
+/**
+ * Musical Ensemble Management System (MEMS)
+ * Module:ITP4507
+ * Student Name:Karim Baba
+ * Student ID: 240167470
+ * File: CommandManager.java
+ */
+
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,27 @@
+/**
+ * Musical Ensemble Management System (MEMS)
+ * Module: ITP4507
+ * Student Name: Karim Baba
+ * Student ID: 240167470
+ * File: Main.java
+ */
+
 import java.util.Scanner;
 
 public class Main {
 
     // ASCII box width: 60 chars
-    private static final String BORDER = "+----------------------------------------------------------+";
+    private static final String BORDER =
+            "+----------------------------------------------------------+";
+
+    private static String readLineEcho(Scanner scanner) {
+        if (!scanner.hasNextLine()) {
+            return "";
+        }
+        String line = scanner.nextLine();
+        System.out.println(line);   // echo user input
+        return line;
+    }
 
     public static void main(String[] args) {
         MEMSContext ctx = new MEMSContext();
@@ -11,21 +29,26 @@ public class Main {
         EnsembleFactory ensembleFactory = new SimpleEnsembleFactory();
         Scanner scanner = new Scanner(System.in);
         CommandFactory commandFactory =
-                new SimpleCommandFactory(ctx, manager, ensembleFactory, scanner);
+                new SimpleCommandFactory(scanner, ctx, manager, ensembleFactory);
 
         boolean running = true;
 
         while (running) {
             printMenu(ctx);
-            System.out.print("Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ");
-            String line = scanner.nextLine();
-            if (line == null) {
-                continue;
-            }
+            System.out.print(
+                    "Please enter command [ c | s | a | m | d | se | sa | cn | u | r | l | x ] :- ");
+            String line = readLineEcho(scanner);
             String cmdCode = line.trim().toLowerCase();
+
             if (cmdCode.equals("x")) {
                 running = false;
                 break;
+            }
+
+            if (cmdCode.isEmpty()) {
+                System.out.println("No command entered.");
+                System.out.println();
+                continue;
             }
 
             Command cmd = commandFactory.createCommand(cmdCode);
@@ -33,12 +56,11 @@ public class Main {
                 manager.execute(cmd);
             }
 
-            System.out.println();
-            System.out.println(BORDER);
-            System.out.println();
+            System.out.println(); // blank line between cycles
         }
 
         System.out.println("System exited.");
+        scanner.close();
     }
 
     private static void printMenu(MEMSContext ctx) {

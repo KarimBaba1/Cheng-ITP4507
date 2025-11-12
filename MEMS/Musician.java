@@ -1,3 +1,11 @@
+/**
+ * Musical Ensemble Management System (MEMS)
+ * Module:ITP4507
+ * Student Name:Karim Baba
+ * Student ID: 240167470
+ * File: Musician.java
+ */
+
 
 public class Musician {
     private String musicianID;

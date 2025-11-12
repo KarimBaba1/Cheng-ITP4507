@@ -1,0 +1,13 @@
+c
+r
+E202
+ALT BAND
+a
+m301, Wrong Role
+5
+a
+m302, Valid Guitarist
+1
+se
+x
+

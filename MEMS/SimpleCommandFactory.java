@@ -1,3 +1,11 @@
+/**
+ * Musical Ensemble Management System (MEMS)
+ * Module: ITP4507
+ * Student Name: Karim Baba
+ * Student ID: 240167470
+ * File: SimpleCommandFactory.java
+ */
+
 import java.util.Scanner;
 
 public class SimpleCommandFactory implements CommandFactory {
@@ -7,14 +15,14 @@ public class SimpleCommandFactory implements CommandFactory {
     private final EnsembleFactory ensembleFactory;
     private final Scanner scanner;
 
-    public SimpleCommandFactory(MEMSContext ctx,
+    public SimpleCommandFactory(Scanner scanner,
+                                MEMSContext ctx,
                                 CommandManager manager,
-                                EnsembleFactory ensembleFactory,
-                                Scanner scanner) {
+                                EnsembleFactory ensembleFactory) {
+        this.scanner = scanner;
         this.ctx = ctx;
         this.manager = manager;
         this.ensembleFactory = ensembleFactory;
-        this.scanner = scanner;
     }
 
     @Override
@@ -56,27 +64,27 @@ public class SimpleCommandFactory implements CommandFactory {
     // ---------- Helpers for each command that needs extra input ----------
 
     private Command createCreateEnsembleCommand() {
-        System.out.print("Enter music type (o = orchestra | j = jazz band) :- ");
-        String typeInput = scanner.nextLine().trim();
+        System.out.print("Enter music type (o = orchestra | j = jazz band | r = rock band) :- ");
+        String typeInput = readLineEcho().trim();
         if (typeInput.isEmpty()) {
             System.out.println("Type is required.");
             return null;
         }
         String type = typeInput.substring(0, 1).toUpperCase();
-        if (!type.equals("O") && !type.equals("J")) {
+        if (!type.equals("O") && !type.equals("J") && !type.equals("R")) {
             System.out.println("Invalid music type.");
             return null;
         }
 
         System.out.print("Ensemble ID:- ");
-        String id = scanner.nextLine().trim();
+        String id = readLineEcho().trim();
         if (id.isEmpty()) {
             System.out.println("Ensemble ID is required.");
             return null;
         }
 
         System.out.print("Ensemble Name:- ");
-        String name = scanner.nextLine().trim();
+        String name = readLineEcho().trim();
         if (name.isEmpty()) {
             System.out.println("Ensemble name is required.");
             return null;
@@ -87,7 +95,7 @@ public class SimpleCommandFactory implements CommandFactory {
 
     private Command createSetCurrentEnsembleCommand() {
         System.out.print("Please input ensemble ID:- ");
-        String id = scanner.nextLine().trim();
+        String id = readLineEcho().trim();
         if (id.isEmpty()) {
             System.out.println("Ensemble ID is required.");
             return null;
@@ -103,7 +111,7 @@ public class SimpleCommandFactory implements CommandFactory {
         }
 
         System.out.print("Please input musician information (id, name):- ");
-        String line = scanner.nextLine();
+        String line = readLineEcho();
         String[] parts = line.split(",", 2);
         if (parts.length < 2) {
             System.out.println("Invalid format. Expected: id, name");
@@ -123,7 +131,8 @@ public class SimpleCommandFactory implements CommandFactory {
             return null;
         }
 
-        return new AddMusicianCommand(ctx, manager, ensembleFactory, musicianId, musicianName, role);
+        return new AddMusicianCommand(ctx, manager, ensembleFactory,
+                                      musicianId, musicianName, role);
     }
 
     private Command createModifyMusicianInstrumentCommand() {
@@ -134,7 +143,7 @@ public class SimpleCommandFactory implements CommandFactory {
         }
 
         System.out.print("Please input musician ID:- ");
-        String id = scanner.nextLine().trim();
+        String id = readLineEcho().trim();
         if (id.isEmpty()) {
             System.out.println("Musician ID is required.");
             return null;
@@ -157,7 +166,7 @@ public class SimpleCommandFactory implements CommandFactory {
         }
 
         System.out.print("Please input musician ID:- ");
-        String id = scanner.nextLine().trim();
+        String id = readLineEcho().trim();
         if (id.isEmpty()) {
             System.out.println("Musician ID is required.");
             return null;
@@ -174,7 +183,7 @@ public class SimpleCommandFactory implements CommandFactory {
         }
 
         System.out.print("Please input new name of the current ensemble:- ");
-        String newName = scanner.nextLine().trim();
+        String newName = readLineEcho().trim();
         if (newName.isEmpty()) {
             System.out.println("Name is required.");
             return null;
@@ -185,16 +194,28 @@ public class SimpleCommandFactory implements CommandFactory {
 
     // ---------- Utility input helpers ----------
 
+    private String readLineEcho() {
+        if (!scanner.hasNextLine()) {
+            return "";
+        }
+        String line = scanner.nextLine();
+        System.out.println(line);   // echo user input
+        return line;
+    }
+
     private int readRoleForCurrentEnsemble(Ensemble current) {
         if (current instanceof OrchestraEnsemble) {
             System.out.print("Instrument (1 = violinist | 2 = cellist ):-  ");
         } else if (current instanceof JazzBandEnsemble) {
             System.out.print("Instrument (1 = pianist | 2 = saxophonist  | 3 = drummer):-  ");
+        } else if (current instanceof RockBandEnsemble) {
+            System.out.print(
+                    "Instrument (1 = guitarist | 2 = bassist | 3 = drummer | 4 = vocalist):-  ");
         } else {
             System.out.print("Instrument code (integer):- ");
         }
 
-        String line = scanner.nextLine().trim();
+        String line = readLineEcho().trim();
         try {
             return Integer.parseInt(line);
         } catch (NumberFormatException e) {
@@ -215,6 +236,12 @@ public class SimpleCommandFactory implements CommandFactory {
             return role == JazzBandEnsemble.PIANIST_ROLE
                     || role == JazzBandEnsemble.SAXOPHONIST_ROLE
                     || role == JazzBandEnsemble.DRUMMER_ROLE;
+        }
+        if (current instanceof RockBandEnsemble) {
+            return role == RockBandEnsemble.GUITARIST_ROLE
+                    || role == RockBandEnsemble.BASSIST_ROLE
+                    || role == RockBandEnsemble.DRUMMER_ROLE
+                    || role == RockBandEnsemble.VOCALIST_ROLE;
         }
         // default: accept any positive role
         return true;

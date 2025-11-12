@@ -25,4 +25,10 @@ java Main <"$TEST_DIR/test04_invalid_set_current.txt" | tee "$OUT_DIR/test04_inv
 echo "Running test05_undo_remove_ensemble..."
 java Main <"$TEST_DIR/test05_undo_remove_ensemble.txt" | tee "$OUT_DIR/test05_undo_remove_ensemble.out"
 
+echo "Running test06_rock_band_basic..."
+java Main <"$TEST_DIR/test06_rock_band_basic.txt" | tee "$OUT_DIR/test06_rock_band_basic.out"
+
+echo "Running test07_rock_band_invalid_role..."
+java Main <"$TEST_DIR/test07_rock_band_invalid_role.txt" | tee "$OUT_DIR/test07_rock_band_invalid_role.out"
+
 echo "All tests completed. Outputs stored in $OUT_DIR/"

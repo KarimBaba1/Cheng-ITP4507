@@ -1,0 +1,20 @@
+
+c
+r
+E201
+METAL HEADS
+a
+m201, James Hetfield
+4
+a
+m202, Kirk Hammett
+1
+a
+m203, Robert Trujillo
+2
+a
+m204, Lars Ulrich
+3
+se
+sa
+x

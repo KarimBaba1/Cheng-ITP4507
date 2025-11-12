@@ -1,3 +1,11 @@
+/**
+ * Musical Ensemble Management System (MEMS)
+ * Module:ITP4507
+ * Student Name:Karim Baba
+ * Student ID: 240167470
+ * File: DeleteMusicianCommand.java
+ */
+
 
 public class DeleteMusicianCommand extends AbstractCommand {
 

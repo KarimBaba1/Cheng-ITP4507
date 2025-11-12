@@ -1,3 +1,11 @@
+/**
+ * Musical Ensemble Management System (MEMS)
+ * Module:ITP4507
+ * Student Name:Karim Baba
+ * Student ID: 240167470
+ * File: OrchestraEnsemble.java
+ */
+
 public class OrchestraEnsemble extends Ensemble {
 
     public static final int VIOLINIST_ROLE = 1;
