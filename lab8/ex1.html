@@ -1,2 +1,30 @@
-const cat = new Object(); cat.name = "Kitty"; cat.gender = "Female"; cosnt cat =
-{ name:"Kitty"; gender:"Female"; }
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Cat Object - New Object and literal Object</title>
+  </head>
+
+  <body>
+    <h2>Object Cat using new object</h2>
+    <p id="output"></p>
+    <script>
+      const cat = new Object();
+      cat.name = "Kitty";
+      cat.gender = "Female";
+
+      document.getElementById("output").innerHTML =
+        "Cat name " + cat.name + "<br>" + "cat gender " + cat.gender;
+    </script>
+
+    <h2>Object Cat using object literal</h2>
+    <p id="output2"></p>
+    <script>
+      const dog = {
+        name: "doggy",
+        gender: "Female",
+      };
+      document.getElementById("output2").innerHTML =
+        "dog name " + dog.name + "<br>" + "dog gender " + dog.gender;
+    </script>
+  </body>
+</html>
