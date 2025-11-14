@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>inheritance in ecma js</title>
+  </head>
+
+  <body>
+    <p id="output"></p>
+    <script>
+      class Person {
+        constructor(name) {
+          this.name = name;
+        }
+        getName() {
+          return this.name;
+        }
+      }
+
+      class Author extends Person {
+        constructor(name, books) {
+          super(name);
+          this.books = books;
+        }
+        getBooks() {
+          return this.books;
+        }
+      }
+      const author = new Author("Karim", "habibi");
+
+      document.getElementById("output").innerHTML =
+        `the name of the author is ${author.name} and the written book is ${author.books}`;
+    </script>
+  </body>
+</html>
