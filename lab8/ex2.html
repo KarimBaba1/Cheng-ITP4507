@@ -6,11 +6,24 @@
 </head>
 
 <body>
+  <p id="output"></p>
   <script>
     class Cat {
       constructor(name, gender) {
         this.name = name;
         this.gender = gender;
+      }
+      getName() {
+        return this.name;
+      }
+      getGender() {
+        return this.gender;
+      }
+      setName(newName) {
+        this.name = newName;
+      }
+      setGender(newGender) {
+        this.gender = newGender;
       }
 
       description() {
@@ -19,7 +32,15 @@
     }
 
     const mycat = new Cat("Kitty", "Female");
-    document.write(mycat.description());
+
+    document.getElementById("output").innerHTML =
+      `description  ${mycat.description()}`;
+
+    mycat.setName("Salim");
+    mycat.setGender("Male");
+
+    document.getElementById("output").innerHTML +=
+      `<br> description ${mycat.description()}`;
   </script>
 </body>
 
