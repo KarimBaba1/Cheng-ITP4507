@@ -1,19 +1,26 @@
-/*Not Finished Yet*/
 <!doctype html>
 <html>
-  <head>
-    <title>ECMA 6</title>
-  </head>
 
-  <body>
-    <script>
-      class cat {
-        public constructor(name, age) {
-          this.name = name;
-          this.gender = gender;
-        }
+<head>
+  <title>ECMA 6 getters</title>
+</head>
 
+<body>
+  <script>
+    class Cat {
+      constructor(name, gender) {
+        this.name = name;
+        this.gender = gender;
       }
-    </script>
-  </body>
+
+      description() {
+        return `The cat's name is ${this.name} and the gender is ${this.gender}`;
+      }
+    }
+
+    const mycat = new Cat("Kitty", "Female");
+    document.write(mycat.description());
+  </script>
+</body>
+
 </html>
